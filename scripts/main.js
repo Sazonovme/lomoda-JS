@@ -21,9 +21,12 @@ const cartModalClose = () => {
 
 subheaderCart.addEventListener('click', cartModalOpen); // Открытие модального окна 
 
+cartOverlay.addEventListener('keydown', )
+
 cartOverlay.addEventListener('click', event => {
     const target = event.target;
-    if(target.classList.contains('cart__btn-close') || target.classList.contains('cart-overlay')){
+    if(target.classList.contains('cart__btn-close') || 
+    target.classList.contains('cart-overlay')){
         cartModalClose();
     }
 }); // Закрытие модального окна 
